@@ -157,6 +157,14 @@ Resources:
                     # Remove "s3://" prefix from EnvironmentInstanceFiles
                     - S3Location: !Select [1, !Split ['s3://', !Ref EnvironmentInstanceFiles]]
               - Effect: 'Allow'
+                Action: 's3:GetObject'
+                Resource:
+                  - 'arn:aws:s3:::us-east-2.elasticmapreduce/bootstrap-actions/run-if'
+                  - !Sub
+                    - 'arn:aws:s3:::${S3Location}/*'
+                    # Remove "s3://" prefix from EnvironmentInstanceFiles
+                    - S3Location: !Select [1, !Split ['s3://', !Ref EnvironmentInstanceFiles]]
+              - Effect: 'Allow'
                 Action: 's3:ListBucket'
                 Resource: !Sub
                   - 'arn:aws:s3:::${S3Bucket}'
@@ -218,7 +226,7 @@ Resources:
       BootstrapActions:
         - Name: Run-Python-Jupyter
           ScriptBootstrapAction:
-            Path: s3://us-east-1.elasticmapreduce/bootstrap-actions/run-if
+            Path: s3://us-east-2.elasticmapreduce/bootstrap-actions/run-if
             Args:
               - 'instance.isMaster=true'
               - '/opt/hail-on-AWS-spot-instances/src/jupyter_run.sh'
