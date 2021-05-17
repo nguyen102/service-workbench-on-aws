@@ -78,10 +78,5 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged --pattern '**/*.*(js|jsx)'"
     }
-  },
-  "pnpm": {
-    "overrides": {
-      "immer": "^8.0.1"
-    }
   }
 }
