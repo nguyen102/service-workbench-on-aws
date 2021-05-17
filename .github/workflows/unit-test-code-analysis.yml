@@ -32,7 +32,7 @@ jobs:
             ${{ runner.os }}-
       - name: Install Node.js dependencies
         run: |
-          npm install -g pnpm
+          npm install -g pnpm@6.3.0
           npm install -g codecov
           pnpm recursive install --unsafe-perm --stream
       - name: Run static code analysis & linting tests
