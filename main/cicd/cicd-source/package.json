@@ -8,7 +8,7 @@
   "devDependencies": {
     "@aws-ee/base-serverless-settings-helper": "workspace:*",
     "aws-sdk": "^2.908.0",
-    "serverless": "^1.83.3",
+    "serverless": "^1.63.0",
     "serverless-deployment-bucket": "^1.5.1"
   },
   "optionalDependencies": {

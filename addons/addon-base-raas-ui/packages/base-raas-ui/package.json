@@ -71,7 +71,7 @@
     "prettier": "^1.19.1",
     "pretty-quick": "^1.11.1",
     "prop-types": "^15.7.2",
-    "serverless": "^1.83.3",
+    "serverless": "^1.63.0",
     "serverless-deployment-bucket": "^1.1.0",
     "typescript": "^3.7.5",
     "webpack": "4.41.2",

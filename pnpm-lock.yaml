@@ -106,7 +106,7 @@ importers:
       regenerator-runtime: ^0.13.5
       request: ^2.34
       semantic-ui-react: ^0.88.2
-      serverless: ^1.83.3
+      serverless: ^1.63.0
       serverless-deployment-bucket: ^1.1.0
       showdown: ^1.9.1
       toastr: ^2.1.4
@@ -766,7 +766,7 @@ importers:
       react-timeago: ^4.4.0
       regenerator-runtime: ^0.13.7
       semantic-ui-react: ^0.88.2
-      serverless: ^1.83.3
+      serverless: ^1.63.0
       serverless-deployment-bucket: ^1.5.1
       showdown: ^1.9.1
       toastr: ^2.1.4
@@ -960,7 +960,7 @@ importers:
       react-table: ^6.11.5
       react-timeago: ^4.4.0
       semantic-ui-react: ^0.88.2
-      serverless: ^1.83.3
+      serverless: ^1.63.0
       serverless-deployment-bucket: ^1.5.1
       showdown: ^1.9.1
       toastr: ^2.1.4
@@ -1274,7 +1274,7 @@ importers:
       jest-junit: ^10.0.0
       prettier: ^1.19.1
       pretty-quick: ^1.11.1
-      serverless: ^1.83.3
+      serverless: ^1.63.0
     dependencies:
       aws-sdk: 2.908.0
     devDependencies:
@@ -1840,7 +1840,7 @@ importers:
     specifiers:
       '@aws-ee/base-serverless-settings-helper': workspace:*
       fsevents: '*'
-      serverless: ^1.83.3
+      serverless: ^1.63.0
       serverless-deployment-bucket: ^1.5.1
       serverless-hooks-plugin: ^1.1.0
     optionalDependencies:
@@ -1856,7 +1856,7 @@ importers:
       '@aws-ee/base-serverless-settings-helper': workspace:*
       aws-sdk: ^2.908.0
       fsevents: '*'
-      serverless: ^1.83.3
+      serverless: ^1.63.0
       serverless-deployment-bucket: ^1.5.1
     optionalDependencies:
       fsevents: 2.3.2
@@ -2083,7 +2083,7 @@ importers:
       node-fetch: ^2.6.1
       prettier: ^1.19.1
       pretty-quick: ^1.11.1
-      serverless: ^1.83.3
+      serverless: ^1.63.0
       serverless-deployment-bucket: ^1.5.1
       serverless-offline: ^5.12.1
       serverless-s3-sync: ^1.17.1
@@ -2160,7 +2160,7 @@ importers:
   main/solution/edge-lambda:
     specifiers:
       '@aws-ee/base-serverless-settings-helper': workspace:*
-      serverless: ^1.83.3
+      serverless: ^1.63.0
       serverless-deployment-bucket: ^1.5.1
     devDependencies:
       '@aws-ee/base-serverless-settings-helper': link:../../../addons/addon-base/packages/serverless-settings-helper
@@ -2172,7 +2172,7 @@ importers:
       '@aws-ee/base-serverless-settings-helper': workspace:*
       '@aws-ee/s3-synchronizer': workspace:*
       '@aws-ee/serverless-go-build-tools': workspace:*
-      serverless: ^1.83.3
+      serverless: ^1.63.0
     devDependencies:
       '@aws-ee/base-serverless-settings-helper': link:../../../addons/addon-base/packages/serverless-settings-helper
       '@aws-ee/s3-synchronizer': link:../../../addons/addon-raas-s3-copy/packages/s3-synchronizer
@@ -2182,7 +2182,7 @@ importers:
   main/solution/infrastructure:
     specifiers:
       '@aws-ee/base-serverless-settings-helper': workspace:*
-      serverless: ^1.83.3
+      serverless: ^1.63.0
       serverless-deployment-bucket: ^1.5.1
     devDependencies:
       '@aws-ee/base-serverless-settings-helper': link:../../../addons/addon-base/packages/serverless-settings-helper
@@ -2193,7 +2193,7 @@ importers:
     specifiers:
       '@aws-ee/base-serverless-settings-helper': workspace:*
       '@aws-ee/serverless-packer': workspace:*
-      serverless: ^1.83.3
+      serverless: ^1.63.0
     devDependencies:
       '@aws-ee/base-serverless-settings-helper': link:../../../addons/addon-base/packages/serverless-settings-helper
       '@aws-ee/serverless-packer': link:../../../addons/addon-base-raas/packages/serverless-packer
@@ -2220,19 +2220,19 @@ importers:
       '@aws-ee/environment-type-mgmt-services': workspace:*
       '@aws-ee/key-pair-mgmt-services': workspace:*
       '@aws-ee/user-id-upgrade-post-deployment': workspace:*
-      '@babel/core': ^7.14.2
-      '@babel/preset-env': ^7.14.2
-      aws-sdk: ^2.908.0
-      babel-loader: ^8.2.2
-      babel-plugin-source-map-support: ^2.1.3
-      copy-webpack-plugin: ^5.1.2
+      '@babel/core': ^7.8.4
+      '@babel/preset-env': ^7.8.4
+      aws-sdk: ^2.713.0
+      babel-loader: ^8.0.6
+      babel-plugin-source-map-support: ^2.1.1
+      copy-webpack-plugin: ^5.1.1
       eslint: ^6.8.0
-      eslint-config-airbnb-base: ^14.2.1
-      eslint-config-prettier: ^6.15.0
-      eslint-import-resolver-node: ^0.3.4
-      eslint-plugin-import: ^2.23.2
+      eslint-config-airbnb-base: ^14.0.0
+      eslint-config-prettier: ^6.10.0
+      eslint-import-resolver-node: ^0.3.3
+      eslint-plugin-import: ^2.20.1
       eslint-plugin-jest: ^22.21.0
-      eslint-plugin-prettier: ^3.4.0
+      eslint-plugin-prettier: ^3.1.2
       husky: ^3.1.0
       jest: ^24.9.0
       jest-junit: ^10.0.0
@@ -2240,13 +2240,13 @@ importers:
       lodash: ^4.17.21
       prettier: ^1.19.1
       pretty-quick: ^1.11.1
-      serverless: ^1.83.3
-      serverless-deployment-bucket: ^1.5.1
-      serverless-s3-sync: ^1.17.1
-      serverless-webpack: ^5.5.0
+      serverless: ^1.63.0
+      serverless-deployment-bucket: ^1.1.0
+      serverless-s3-sync: ^1.10.2
+      serverless-webpack: ^5.3.3
       services: workspace:*
-      source-map-support: ^0.5.19
-      webpack: ^4.46.0
+      source-map-support: ^0.5.16
+      webpack: ^4.41.5
     dependencies:
       '@aws-ee/base-post-deployment': link:../../../addons/addon-base-post-deployment/packages/base-post-deployment
       '@aws-ee/base-raas-post-deployment': link:../../../addons/addon-base-raas/packages/base-raas-post-deployment
@@ -2299,7 +2299,7 @@ importers:
   main/solution/prepare-master-acc:
     specifiers:
       '@aws-ee/base-serverless-settings-helper': workspace:*
-      serverless: ^1.83.3
+      serverless: ^1.63.0
       serverless-deployment-bucket: ^1.5.1
     devDependencies:
       '@aws-ee/base-serverless-settings-helper': link:../../../addons/addon-base/packages/serverless-settings-helper
@@ -2347,7 +2347,7 @@ importers:
       react-scripts: ^3.4.4
       react-table: ^6.11.5
       semantic-ui-react: ^0.88.2
-      serverless: ^1.83.3
+      serverless: ^1.63.0
       serverless-deployment-bucket: ^1.5.1
       toastr: ^2.1.4
       typeface-lato: 0.0.75

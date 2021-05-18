@@ -61,7 +61,7 @@
     "pretty-quick": "^1.11.1",
     "prop-types": "^15.7.2",
     "regenerator-runtime": "^0.13.7",
-    "serverless": "^1.83.3",
+    "serverless": "^1.63.0",
     "serverless-deployment-bucket": "^1.5.1",
     "typescript": "^3.9.9",
     "webpack": "4.41.2"
