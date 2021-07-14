@@ -32,6 +32,7 @@ const settingKeys = {
   launchConstraintRolePrefix: 'launchConstraintRolePrefix',
   launchConstraintPolicyPrefix: 'launchConstraintPolicyPrefix',
   isAppStreamEnabled: 'isAppStreamEnabled',
+  solutionNamespace: 'solutionNamespace',
 };
 
 class ProvisionAccount extends StepBase {
@@ -199,7 +200,8 @@ class ProvisionAccount extends StepBase {
     const cfn = await this.getCloudFormationService();
 
     const [template] = await Promise.all([cfnTemplateService.getTemplate('onboard-account')]);
-    const stackName = `initial-stack-${new Date().getTime()}`;
+    const solutionNamespace = this.settings.get(settingKeys.solutionNamespace);
+    const stackName = `${solutionNamespace}-swb-onboard`;
     const cfnParams = [];
     const addParam = (key, v) => cfnParams.push({ ParameterKey: key, ParameterValue: v });
 
